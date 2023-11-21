@@ -1,0 +1,6 @@
+---
+- name: Playbook to install base packages
+  hosts: localhost
+  become: true
+  roles:
+    - base_packages

@@ -1,0 +1,13 @@
+---
+- name: Install base packages
+  become: true
+  apt:
+    name:
+      - ncdu
+      - wget
+      - curl
+      - net-tools
+      - wireshark 
+      - nmap 
+      - aircrack-ng
+    state: present
