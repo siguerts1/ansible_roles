@@ -23,6 +23,6 @@ jobs:
           python3 -m pip install molecule molecule-docker docker          
       - name: Test with molecule
         run: |
-          ls -la /home/runner/work/ansible_roles/ansible_roles/molecule_demo/
+          cd /home/runner/work/ansible_roles/ansible_roles/molecule_demo/base_packages
           molecule test 
 
