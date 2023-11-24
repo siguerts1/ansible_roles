@@ -8,11 +8,11 @@
     #     name: xenial
     #     image: "geerlingguy/docker-ubuntu1604-ansible:latest"
     #     state: started
-    # - name: Create molecule instance(s)
-    #   docker_container:
-    #     name: bionic
-    #     image: "geerlingguy/docker-ubuntu1804-ansible:latest"
-    #     state: started
+    - name: Create molecule instance(s)
+      docker_container:
+        name: bionic
+        image: "geerlingguy/docker-ubuntu1804-ansible:latest"
+        state: started
     - name: Create molecule instance(s)
       docker_container:
         name: focal
