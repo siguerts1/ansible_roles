@@ -5,12 +5,12 @@ driver:
   name: docker
 role_name_check: 1
 platforms:
-  # - name: xenial
-  #   image: "geerlingguy/docker-ubuntu1604-ansible:latest"
-  #   volumes:
-  #     - /sys/fs/cgroup:/sys/fs/cgroup:ro
-  #   privileged: true
-  #   pre_build_image: true
+  - name: xenial
+    image: "geerlingguy/docker-ubuntu1604-ansible:latest"
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
+    pre_build_image: true
   - name: bionic
     image: "geerlingguy/docker-ubuntu1804-ansible:latest"
     volumes:
