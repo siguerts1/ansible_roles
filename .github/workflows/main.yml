@@ -25,6 +25,10 @@ jobs:
         run: |
           cd /home/runner/work/ansible_roles/ansible_roles/molecule_demo/base_packages
           molecule create
+      - name: Test converge with molecule
+        run: |   
+          cd /home/runner/work/ansible_roles/ansible_roles/molecule_demo/base_packages
+          molecule create
       - name: Test destroy with molecule 
         run: |
           cd /home/runner/work/ansible_roles/ansible_roles/molecule_demo/base_packages
