@@ -1,7 +1,11 @@
 ---
 - debug:
     msg: "System Will be installing base packages"
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1564430150a177df762efc6ba77e335845b492d2
 - name: Install base packages
   become: true
   apt:
