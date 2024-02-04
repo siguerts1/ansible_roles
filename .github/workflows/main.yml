@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          path: molecule_demo
+          path: .
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
@@ -22,6 +22,6 @@ jobs:
           python3 -m pip install --upgrade pip
           python3 -m pip install molecule molecule-docker docker          
       - name: Test with molecule
-        run: |
-          cd /home/runner/work/ansible_roles/ansible_roles/molecule_demo/base_packages
-          molecule test
+        run: cd `pwd`/base_packages && molecule test
+          #cd /home/runner/work/ansible_roles/ansible_roles/molecule_demo/base_packages
+          #molecule test
