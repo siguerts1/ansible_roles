@@ -1,6 +1,6 @@
 ---
 - name: Best Playbook to install base packages
-  hosts: localhost
+  hosts: supersonic
   become: true
   roles:
     - base_packages
